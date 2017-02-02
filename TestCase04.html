@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.facebook.com/" />
+<title>TC-04 Post a New Comment</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-04 Post a New Comment</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeEval</td>
+	<td>var d=new Date(); ((d.getMonth()+1))+'-'+d.getDate()&nbsp;&nbsp;+'-'+d.getFullYear()+' '+d.getHours()+':'+d.getMinutes()</td>
+	<td>time</td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td>/se.taipeitech</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>CSS=.UFILikeLink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=.comment_link._5yxe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[contains(@id,'addComment_')]/descendant::div[@class='_5rpu']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[contains(@id,'addComment_')]/descendant::div[@class='_5rpu']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeKeys</td>
+	<td>//div[@class='_5rpu']</td>
+	<td>Test Comment Time:${time}</td>
+</tr>
+<tr>
+	<td>keyDown</td>
+	<td>//div[@class='_5rpu']</td>
+	<td>13</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//h6[@class=&quot;accessible_elem&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.UFICommentBody&gt;span</td>
+	<td>Test Comment Time:${time}</td>
+</tr>
+</tbody></table>
+</body>
+</html>

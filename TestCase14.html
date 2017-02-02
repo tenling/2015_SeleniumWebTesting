@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.facebook.com/" />
+<title>TC-14 Manage Albums</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-14 Manage Albums</td></tr>
+</thead><tbody>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/se.taipeitech/photos_albums</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>XPath=.//*[@class='albumThumbLink uiMediaThumb uiScrollableThumb']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>XPath=.//*[@id='album_header_pagelet']/div[1]/div[2]/span/a[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>XPath=.//*[contains(@id,'u_')]/div[1]/div/input</td>
+	<td>Testing Albums</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=._42ft._42fu._4-rs._4-ru.selected._42g-._42gy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=.fbPhotoAlbumTitle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.fbPhotoAlbumTitle</td>
+	<td>Testing Albums</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=.img.sp_qQyz77Tpisc.sx_12ca31</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>XPath=.//*[contains(@id,'u_j')]/div/ul/li[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=._42ft._4jy0.layerConfirm.uiOverlayButton._4jy3._4jy1.selected._51sy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=._42ft._4jy0.layerConfirm.uiOverlayButton._4jy3._4jy1.selected._51sy</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

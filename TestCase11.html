@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.facebook.com/" />
+<title>TC-11 Create Event</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-11 Create Event</td></tr>
+</thead><tbody>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var d=new Date(); ((d.getMonth()+1))+'-'+d.getDate()&nbsp;&nbsp;+'-'+d.getFullYear()+' '+d.getHours()+':'+d.getMinutes()</td>
+	<td>time</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/events/upcoming?action_history=null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=._42ft._4jy0._v_2._4jy3._4jy1.selected._51sy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//input[@placeholder=&quot;新增簡短且淺顯易懂的名稱&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@placeholder=&quot;新增簡短且淺顯易懂的名稱&quot;]</td>
+	<td>Test Even ${time}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@placeholder=&quot;包含地標或地址&quot;]</td>
+	<td>National Taipei University of Technology</td>
+</tr>
+<tr>
+	<td>keyDown</td>
+	<td>//input[@placeholder=&quot;包含地標或地址&quot;]</td>
+	<td>40</td>
+</tr>
+<tr>
+	<td>keyDown</td>
+	<td>//input[@placeholder=&quot;包含地標或地址&quot;]</td>
+	<td>13</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@value='1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=._56wb</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=._56wb</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@value='1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//a[@data-testid=&quot;event-permalink-event-name&quot;]</td>
+	<td>Test Even ${time}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//a[@data-testid=&quot;event-permalink-location&quot; ]</td>
+	<td>National Taipei University of Technology</td>
+</tr>
+</tbody></table>
+</body>
+</html>
